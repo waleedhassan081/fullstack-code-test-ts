@@ -1,0 +1,91 @@
+.container {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #7fb900;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+}
+
+.bigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #7fb900;
+  opacity: 0;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+
+  animation-duration: 4s;
+  animation-name: animbigger;
+  animation-iteration-count: infinite;
+
+  animation-delay: 2s;
+
+}
+
+.biggest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #7fb900;
+  opacity: 0;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  animation-duration: 4s;
+  animation-name: animbiggest;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+@keyframes animbiggest {
+  /* from {
+    opacity: 0.5;
+    height: 200px;
+    width: 200px;
+  }
+  to {
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+  } */
+
+  from {
+    opacity: 0.2;
+    height: 100px;
+    width: 100px;
+  }
+  to {
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+  }
+}
+
+@keyframes animbigger {
+  from {
+    opacity: 0.2;
+    height: 100px;
+    width: 100px;
+  }
+  to {
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+  }
+}
