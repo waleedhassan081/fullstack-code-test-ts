@@ -18,7 +18,7 @@ Before you begin, ensure that you have the following software installed on your 
 
 2. Navigate to the project directory:
    ```
-   cd code-test
+   cd fullstack-code-test-ts
    ```
 
 3. Rename the `.env.example` file to `.env`.
